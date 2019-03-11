@@ -1,0 +1,1 @@
+Java -jar AndResGuard-cli-1.2.15.jar app-release.apk -config config.xml -out release -zipalign D:\Android\AndResGuard\zipalign -7zip "C:\Program Files\7-Zip\7z.exe" -signature D:\share\key1.jks 1234567 1234567 key0

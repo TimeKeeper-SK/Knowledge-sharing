@@ -1,0 +1,117 @@
+Announcement: The server has been restarted at 21:45 04/17. All blockchain have been reset. View source code
+
+hash of genesis block: d3dbd7769b15d7ef01e44b20f9e35f76cb16923645786710ad7c4c2614d3c8d6
+
+//银行地址
+the bank's addr: 
+b2b69bf382659fd193d40f3905eda4cb91a2af16d719b6f9b74b3a20ad7a19e4de41e5b7e78c8efd60a32f9701a13985
+
+//黑客地址
+,the hacker's addr: 
+955c823ea45e97e128bd2c64d139b3625afb3b19c37da9972548f3d28ed584b24f5ea49a17ecbe60e9a0a717b834b131
+
+//商店地址
+ the shop's addr: 
+ b81ff6d961082076f3801190a731958aec88053e8191258b0ad9399eeecd8306924d2d2a047b5ec1ed8332bf7a53e735
+
+//每个账户的资金
+Balance of all addresses: 
+{
+	"b2b69bf382659fd193d40f3905eda4cb91a2af16d719b6f9b74b3a20ad7a19e4de41e5b7e78c8efd60a32f9701a13985": 1//银行地址的资金
+	"b81ff6d961082076f3801190a731958aec88053e8191258b0ad9399eeecd8306924d2d2a047b5ec1ed8332bf7a53e735": 0//商店地址的资金
+	"955c823ea45e97e128bd2c64d139b3625afb3b19c37da9972548f3d28ed584b24f5ea49a17ecbe60e9a0a717b834b131": 999999//黑客地址的资金
+}
+
+//所有UTXO输出
+All utxos: 
+{
+	//输出1
+	"26bf12c7-ef7d-47e7-aa31-fd6c16b85427": 
+	{
+		"amount": 999999 
+		"hash":"740d8e9491bbb82ecdc94f46241813ad00ec8cca07eccc845776a94c6df9a2d7" 
+		"addr": "955c823ea45e97e128bd2c64d139b3625afb3b19c37da9972548f3d28ed584b24f5ea49a17ecbe60e9a0a717b834b131"
+		"id": "26bf12c7-ef7d-47e7-aa31-fd6c16b85427"
+	}
+	//输出2
+	"00fbcc30-d3ae-4510-ac6a-dc96591a7bbd": 
+	{
+		"amount": 1
+		"hash": "d25977316548a5e2607a213617802b12f85c66c0c1344acb426c988b29138d1a"
+		"addr": "b2b69bf382659fd193d40f3905eda4cb91a2af16d719b6f9b74b3a20ad7a19e4de41e5b7e78c8efd60a32f9701a13985"
+ 		"id": "00fbcc30-d3ae-4510-ac6a-dc96591a7bbd"
+ 	}
+
+ }
+
+//区块链情况
+Blockchain Explorer: 
+{
+	//高度为0创世区块
+	"d3dbd7769b15d7ef01e44b20f9e35f76cb16923645786710ad7c4c2614d3c8d6": 
+		{
+		"nonce": "The Times 03/Jan/2009 Chancellor on brink of second bailout for bank"
+		"prev": "0000000000000000000000000000000000000000000000000000000000000000"
+		"hash": "d3dbd7769b15d7ef01e44b20f9e35f76cb16923645786710ad7c4c2614d3c8d6"
+		"transactions":
+ 			[	
+ 				{
+ 				"input": []
+ 				"signature": []
+		 		"hash": "9a54b556b291621f485a3bcccbf63ff99ec27179d8c0a52bf5af7088ce269c74"
+		 		"output": 
+ 					[
+ 						{		
+ 						"amount": 1000000
+ 						"hash": "b2651ffa49c5e390b18c3b5fc739eaad26cb3efa2841c10cf4026c01ec8dac41"
+ 						"addr": "b2b69bf382659fd193d40f3905eda4cb91a2af16d719b6f9b74b3a20ad7a19e4de41e5b7e78c8efd60a32f9701a13985"
+ 						"id": "5ad38d23-2574-4043-bb01-8ea5d983498e"
+ 						}
+ 					]
+ 				}
+ 			]
+		 "height": 0
+ 		}
+
+	//黑客append的空区块，高度为2
+	"d9771b2f3520b5a9291b84e05f16edef474f0b109537c7e078e64e5db7f88404": 
+ 	{
+ 	"nonce": "a empty block"
+ 	"prev": "6793d011db3e4b70c7fe691cf7869d583743ca627d4a012152ecff1eb7c36a26"
+ 	"hash": "d9771b2f3520b5a9291b84e05f16edef474f0b109537c7e078e64e5db7f88404"
+ 	"transactions": []
+ 	"height": 2
+ 	}
+
+ 	//黑客转账信息区块，高度为1
+ 	"6793d011db3e4b70c7fe691cf7869d583743ca627d4a012152ecff1eb7c36a26": 
+ 	{
+ 	"nonce": "HAHA, I AM THE BANK NOW!"
+ 	"prev": "d3dbd7769b15d7ef01e44b20f9e35f76cb16923645786710ad7c4c2614d3c8d6"
+ 	"hash": "6793d011db3e4b70c7fe691cf7869d583743ca627d4a012152ecff1eb7c36a26"
+ 	"transactions": 
+		[
+ 			{
+ 				"input": ["5ad38d23-2574-4043-bb01-8ea5d983498e"]
+ 				"signature": ["2515929927fdce8a2bb8b75b2b911c481108f9e98995abc37370318691c7fcc701d345c581aade09c8bb0e49248e49c1"]
+ 				"hash": "9a0100f3b268fbf43d29342bc68ec29b42e8bb165c6062f69ccd5481f90dc71c"
+ 				"output": 
+ 				[
+ 					{	
+ 					"amount": 999999
+ 					"hash": "740d8e9491bbb82ecdc94f46241813ad00ec8cca07eccc845776a94c6df9a2d7"
+ 					"addr": "955c823ea45e97e128bd2c64d139b3625afb3b19c37da9972548f3d28ed584b24f5ea49a17ecbe60e9a0a717b834b131"
+ 					"id": "26bf12c7-ef7d-47e7-aa31-fd6c16b85427"
+ 					}
+ 					{
+ 					"amount": 1
+ 					"hash": "d25977316548a5e2607a213617802b12f85c66c0c1344acb426c988b29138d1a"
+ 					"addr": "b2b69bf382659fd193d40f3905eda4cb91a2af16d719b6f9b74b3a20ad7a19e4de41e5b7e78c8efd60a32f9701a13985"
+ 					"id": "00fbcc30-d3ae-4510-ac6a-dc96591a7bbd"
+ 					}
+ 				]
+ 			}
+ 		]
+ 	"height": 1
+}
+}
